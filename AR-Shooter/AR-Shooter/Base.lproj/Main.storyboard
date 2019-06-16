@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AR_Shooter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AM0-ob-web">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ZY-ZS-J6e">
+                                <rect key="frame" x="187" y="428" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="I5W-cA-Zi1"/>
+                                    <constraint firstAttribute="width" constant="40" id="urg-i2-Eej"/>
+                                </constraints>
+                                <state key="normal" image="plus"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Game by Jack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qT0-kd-jR8">
+                                <rect key="frame" x="110.5" y="74" width="193" height="25"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykh-go-gvw">
+                                <rect key="frame" x="30" y="742" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="7lc-Zg-ZUM"/>
+                                    <constraint firstAttribute="height" constant="90" id="IIl-Jl-79C"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="play"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ktT-oz-fKJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1u-JT-9AJ">
+                                <rect key="frame" x="294" y="742" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="1ke-KI-lQ4"/>
+                                    <constraint firstAttribute="width" constant="90" id="GXV-Vx-Pvx"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="reset"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ENy-tZ-zX3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tv7-AA-aU3">
+                                <rect key="frame" x="162" y="701.5" width="90.5" height="30.5"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AM0-ob-web" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Gpf-rg-YGI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tv7-AA-aU3" secondAttribute="bottom" constant="130" id="Q1S-kt-alI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="j1u-JT-9AJ" secondAttribute="bottom" constant="30" id="Q6z-xB-uRc"/>
+                            <constraint firstItem="qT0-kd-jR8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ShE-bx-3iy"/>
+                            <constraint firstItem="qT0-kd-jR8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="ZN7-BU-ZlB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ykh-go-gvw" secondAttribute="bottom" constant="30" id="ceK-ea-Wfu"/>
+                            <constraint firstItem="AM0-ob-web" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="i3u-ag-zfG"/>
+                            <constraint firstItem="5ZY-ZS-J6e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="itQ-5E-eve"/>
+                            <constraint firstItem="5ZY-ZS-J6e" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kqd-1J-UPP"/>
+                            <constraint firstItem="Tv7-AA-aU3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kxg-Fv-NiA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AM0-ob-web" secondAttribute="bottom" id="mA2-gc-u3g"/>
+                            <constraint firstItem="ykh-go-gvw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="o4m-ag-Yq5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j1u-JT-9AJ" secondAttribute="trailing" constant="30" id="sGB-OL-OfI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AM0-ob-web" secondAttribute="trailing" id="yXA-gu-pma"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="play" destination="ykh-go-gvw" id="un1-yc-a2w"/>
+                        <outlet property="sceneView" destination="AM0-ob-web" id="xbj-KV-WcJ"/>
+                        <outlet property="scoreLabel" destination="Tv7-AA-aU3" id="gnY-CG-C6D"/>
+                        <outlet property="timerLabel" destination="qT0-kd-jR8" id="MJw-Md-wZb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="play" width="512" height="512"/>
+        <image name="plus" width="512" height="512"/>
+        <image name="reset" width="512" height="512"/>
+    </resources>
+</document>
